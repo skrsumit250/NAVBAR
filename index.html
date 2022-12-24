@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav bar starts -->
+    <nav class="nav">
+      <button class="toggle-menu" onclick="myFunction()"><img src="toggle.jpg" width="20px"></button>
+      <div class="toggle-link" id="togglelink">
+        <ul>
+          <li class="list"><a href="#" id="tablink">HOME</a></li>
+          <li class="list"><a href="#" id="tablink">SPEAKERS</a></li>
+          <li class="list"><a href="#" id="tablink">REGISTRATION</a></li>
+          <li class="list"><a href="#" id="droplink" onclick="myFun()">PAST EVENTS</a></li>
+          <div class="drop-down-toggle" id="drop-down-toggle">
+            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2022</a></div></li>
+            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2021</a></div></li>
+            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2020</a></div></li>
+            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2019</a></div></li>
+            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2016</a></div></li>
+          </div>
+          <li class="list"><a href="#" id="tablink">LOCATION</a></li>
+          <li class="list"><a href="#" id="tablink">PATNERS</a></li>
+        </ul>
+      </div>
+      <div class="logo"><a href="#"><img src="TEDxIITGuwahati1.jpeg.jpg" id="tedlogo"></a></div>
+      <div class="link">
+        <a href="#" id="tab">HOME</a>
+        <a href="#" id="tab">SPEAKERS</a>
+        <a href="#" id="tab" >REGISTRATION</a>
+        <div class="drop-down">
+          <a href="#" id="drop">PAST EVENTS</a>
+          <div class="drop-box">
+            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2022</a></div></div>
+            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2021</a></div></div>
+            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2020</a></div></div>
+            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2018</a></div></div>
+            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2016</a></div></div>
+          </div>
+        </div>
+        <a href="#" id="tab">LOCATION</a>
+        <a href="#" id="tab">PATNERS</a>
+      </div> 
+    </nav>
+    
+    <div class="box"></div>
+    <!-- Nav bar ends -->
+</body>
+<script>
+  function myFunction() {
+    var x = document.getElementById("togglelink");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  function myFun() {
+    var y = document.getElementById("drop-down-toggle");
+    if (y.style.display === "block") {
+      y.style.display = "none";
+    } else {
+      y.style.display = "block";
+    }
+  }
+  </script>
+</html>
+
