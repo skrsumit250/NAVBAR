@@ -69,6 +69,7 @@ body{
     background-color: #ddd;
 }
 .listdrop{
+    list-style: none;
     text-align: center;
     border-bottom:1px #c7c7c7 solid;   
     padding: 5px;
