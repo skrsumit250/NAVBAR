@@ -10,7 +10,6 @@
 <body>
     <!-- Nav bar starts -->
     <nav class="nav">
-      <button class="toggle-menu" onclick="myFunction()"><img src="toggle.jpg" width="20px"></button>
       <div class="toggle-link" id="togglelink">
         <ul>
           <li class="list"><a href="#" id="tablink">HOME</a></li>
@@ -29,6 +28,13 @@
         </ul>
       </div>
       <div class="logo"><a href="#"><img src="TEDxIITGuwahati1.jpeg.jpg" id="tedlogo"></a></div>
+      <div class="btn">
+        <button class="toggle-menu" onclick="myFunction()">
+          <img src="toggle.jpg" width="20px" id="menu">
+          <img src="cross.svg"  width="20px" id="cross" style="display: none;">
+        </button>
+      </div>
+      
       <div class="link">
         <a href="#" id="tab">HOME</a>
         <a href="#" id="tab">SPEAKERS</a>
@@ -54,10 +60,16 @@
 <script>
   function myFunction() {
     var x = document.getElementById("togglelink");
+    var c = document.getElementById("cross");
+    var m = document.getElementById("menu")
     if (x.style.display === "block") {
       x.style.display = "none";
+      m.style.display = "block";
+      c.style.display = "none";
     } else {
       x.style.display = "block";
+      m.style.display = "none";
+      c.style.display = "block";
     }
   }
   function myFun() {

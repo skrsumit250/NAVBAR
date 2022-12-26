@@ -38,18 +38,17 @@ body{
     display: none;
     position: fixed;
     top: 110px;
-    left: 0;
+    left: 30%;
     position: absolute;
     background-color: white;
-    padding: 10px;
-    width: 60vw;
+    width: 12rem;
     height: 100vh;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 .list{
     list-style: none;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     border-bottom:1px #c7c7c7 solid;
 }
@@ -58,7 +57,6 @@ body{
 }
 .listlink{
     list-style: none;
-    text-align: center;
     padding: 10px;
     border-bottom:1px #c7c7c7 solid;
 }
@@ -70,13 +68,13 @@ body{
 }
 .listdrop{
     list-style: none;
-    text-align: center;
     border-bottom:1px #c7c7c7 solid;   
     padding: 5px;
+    padding-left: 30px;
 }
 .listdroplink{
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     width: 50px;
     display: flex;
     flex-direction:row;
@@ -179,16 +177,12 @@ body{
     font-family: 'Inter', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 }
-#toggle-button{
-    /* padding: .rem; */
-    background-color:#ddd;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-}
 
 @media only screen and (min-width: 1050px) {
     .toggle-menu{
+        display: none;
+    }
+    .btn{
         display: none;
     }
   }
@@ -196,14 +190,15 @@ body{
     .link{
         display: none;
     }
-    .nav{
-        text-align: center;
+    .btn{
+        display: block;
+        width: 100%;
+        text-align: right; 
     }
     .toggle-menu{
         height: 2.6rem;
-        position: relative;
-        top: 30%;
-        margin-left: 2rem;
+        margin-top: 1.6rem;
+        margin-right: 2rem;
         padding: 10px;
         background-color:white;
         border-radius: 5px;
@@ -213,11 +208,7 @@ body{
     }
     .toggle-menu:hover{
         background-color: #ddd;
-    }
-    .logo{
-        padding-left: 80px;
-    }
-    
+    }  
   }
 @media only screen and (max-width: 450px) {
     #tedlogo{
