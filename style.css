@@ -29,14 +29,10 @@ body{
 .link{
     width: 70%;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    margin-top: 35px;
-    padding-left: 150px;
+    margin-top: 3%;
 }
 .toggle-link{
     display: none;
-    position: fixed;
     top: 110px;
     left: 30%;
     position: absolute;
@@ -49,12 +45,12 @@ body{
 .list{
     list-style: none;
     text-align: left;
-    padding: 10px;
+    padding: 8%;
     border-bottom:1px #c7c7c7 solid;
 }
-.list:hover{
+/* .list:hover{
     background-color: #ddd;
-}
+} */
 .listlink{
     list-style: none;
     padding: 10px;
@@ -63,14 +59,14 @@ body{
 .drop-down-toggle{
     display: none;
 }
-.listdrop:hover{
+/* .listdrop:hover{
     background-color: #ddd;
-}
+} */
 .listdrop{
     list-style: none;
     border-bottom:1px #c7c7c7 solid;   
-    padding: 5px;
-    padding-left: 30px;
+    padding: 4%;
+    padding-left: 15%;
 }
 .listdroplink{
     /* margin-left: auto; */
@@ -81,7 +77,7 @@ body{
 }
 #tab{
     text-decoration: none;
-    padding-right: 40px;
+    padding-left: 5%;
     color: red;
     font-family: 'Inter', sans-serif;
 }
@@ -99,8 +95,7 @@ body{
 .drop-down{
     width: 110px;
     height: 20px;
-    margin-right: 40px;
-    overflow: hidden;
+    margin-left: 5%;
     display: inline-block;
 }
 .drop-down:hover .drop-box{
@@ -125,10 +120,9 @@ body{
     display: none;
     position: absolute;
     background-color: white;
-    width: 100px;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-bottom: 10px;
+    width: 10%;
+    padding-left: 1%;
+    padding-bottom: 1.5%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -138,8 +132,8 @@ body{
 }
 .year{
     text-align: left;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 20%;
+    padding-left: 10%;
     display: flex;
     flex-direction: row;
 }
@@ -148,9 +142,9 @@ body{
     padding-left: 5px;
     width: 50px;
 }
-.droptab:hover{
+/* .droptab:hover{
     background-color: #ddd;
-}
+} */
 #atab{
     text-decoration: none;
     color: red;
@@ -177,8 +171,14 @@ body{
     font-family: 'Inter', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 }
-
-@media only screen and (min-width: 1050px) {
+.box{
+    background-color:rgb(106, 106, 106);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+@media only screen and (min-width: 1140px) {
     .toggle-menu{
         display: none;
     }
@@ -186,7 +186,7 @@ body{
         display: none;
     }
   }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1140px) {
     .link{
         display: none;
     }

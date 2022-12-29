@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <!-- Nav bar starts -->
     <nav class="nav">
       <div class="toggle-link" id="togglelink">
@@ -24,7 +24,7 @@
             <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2016</a></div></li>
           </div>
           <li class="list"><a href="#" id="tablink">LOCATION</a></li>
-          <li class="list"><a href="#" id="tablink">PATNERS</a></li>
+          <li class="list"><a href="#" id="tablink">PARTNERS</a></li>
         </ul>
       </div>
       <div class="logo"><a href="#"><img src="TEDxIITGuwahati1.jpeg.jpg" id="tedlogo"></a></div>
@@ -50,11 +50,11 @@
           </div>
         </div>
         <a href="#" id="tab">LOCATION</a>
-        <a href="#" id="tab">PATNERS</a>
+        <a href="#" id="tab">PARTNERS</a>
       </div> 
     </nav>
+    <div class="box" id="box"></div>
     
-    <div class="box"></div>
     <!-- Nav bar ends -->
 </body>
 <script>
@@ -62,14 +62,17 @@
     var x = document.getElementById("togglelink");
     var c = document.getElementById("cross");
     var m = document.getElementById("menu")
+    var p = document.getElementById("box");
     if (x.style.display === "block") {
       x.style.display = "none";
       m.style.display = "block";
       c.style.display = "none";
+      p.style.opacity = 1;
     } else {
       x.style.display = "block";
       m.style.display = "none";
       c.style.display = "block";
+      p.style.opacity = 0.2;
     }
   }
   function myFun() {
