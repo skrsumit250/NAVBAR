@@ -51,7 +51,7 @@
         <a href="#" id="tab">PARTNERS</a>
       </div> 
     </nav>
-    <div class="box" id="box"></div>
+    <!-- <div class="box" id="box"></div> -->
     
     <!-- Nav bar ends -->
 </body>
@@ -65,11 +65,17 @@
       x.style.display = "none";
       m.style.display = "block";
       c.style.display = "none";
+      window.onscroll = function() {};
       p.style.opacity = 1;
     } else {
       x.style.display = "block";
       m.style.display = "none";
       c.style.display = "block";
+      scrollTop=window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft=window.pageXOffset || document.documentElement.scrollLeft,
+      window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+      };
       p.style.opacity = 0.2;
     }
   }
@@ -80,6 +86,9 @@
     } else {
       y.style.display = "block";
     }
+  }
+  function enableScroll() {
+    window.onscroll = function() {};
   }
   </script>
 </html>

@@ -37,7 +37,7 @@ body{
     left: 30%;
     position: absolute;
     background-color: white;
-    width: 12rem;
+    width: 20rem;
     height: 100vh;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -196,6 +196,9 @@ body{
         width: 100%;
         text-align: right; 
     }
+    .toggle-link{
+        width: 20rem;
+    }
     .toggle-menu{
         height: 2.6rem;
         margin-top: 1.6rem;
@@ -211,7 +214,7 @@ body{
         background-color: #ddd;
     }  
   }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     #tedlogo{
         width: 250px;
     }
@@ -220,5 +223,13 @@ body{
     }
     .toggle-menu{
         margin-left: 1rem;
+    }
+    .toggle-link{
+        width: 16rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .toggle-link{
+        width: 12rem;
     }
 }
