@@ -242,13 +242,17 @@ body{
 @media only screen and (max-width: 500px) {
     #tedlogo{
         width: 250px;
-        padding-top: 4%;
+        /* padding-top: 4%; */
     }
     .toggle-menu{
         margin-left: 1rem;
+        margin-top: 1rem;
     }
     .toggle-link{
         width: 16rem;
+    }
+    .nav{
+        height: 71px;
     }
 }
 @media only screen and (max-width: 400px) {
