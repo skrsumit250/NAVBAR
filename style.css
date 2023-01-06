@@ -41,6 +41,11 @@ body{
         margin-left: 25%;
     }
 }
+@media only screen and (min-width: 1800px) {
+    .link{
+        margin-left: 35%;
+    }
+}
 .toggle-link{
     display: none;
     top: 115px;
