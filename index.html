@@ -20,7 +20,7 @@
             <li class="listdrop"><div class="listdroplink"><img src="2022_logo.png" width="30px"><div class="alink"><a href="#" id="alink">2022</a></div></li>
             <li class="listdrop"><div class="listdroplink"><img src="2021_logo.png" width="30px"><div class="alink"><a href="#" id="alink">2021</a></div></li>
             <li class="listdrop"><div class="listdroplink"><img src="2019_logo.png" width="30px"><div class="alink"><a href="#" id="alink">2019</a></div></li>
-            <li class="listdrop"><div class="listdroplink"><img src="yearlogo.jpg" width="30px"><div class="alink"><a href="#" id="alink">2016</a></div></li>
+            <li class="listdrop"><div class="listdroplink"><img src="TEDxIITG.png" width="30px"><div class="alink"><a href="#" id="alink">2016</a></div></li>
           </div>
           <li class="list"><a href="#" id="tablink">LOCATION</a></li>
           <li class="list"><a href="#" id="tablink">PARTNERS</a></li>
@@ -44,7 +44,7 @@
             <div class="year"><img src="2022_logo.png" width="30px"><div class="droptab"><a href="#" id="atab">2022</a></div></div>
             <div class="year"><img src="2021_logo.png" width="30px"><div class="droptab"><a href="#" id="atab">2021</a></div></div>
             <div class="year"><img src="2019_logo.png" width="30px"><div class="droptab"><a href="#" id="atab">2019</a></div></div>
-            <div class="year"><img src="yearlogo.jpg" width="30px"><div class="droptab"><a href="#" id="atab">2016</a></div></div>
+            <div class="year"><img src="TEDxIITG.png" width="30px"><div class="droptab"><a href="#" id="atab">2016</a></div></div>
           </div>
         </div>
         <a href="#" id="tab">LOCATION</a>
@@ -61,10 +61,12 @@
     var c = document.getElementById("cross");
     var m = document.getElementById("menu")
     var p = document.getElementById("box");
+    var y = document.getElementById("drop-down-toggle");
     if (x.style.display === "block") {
       x.style.display = "none";
       m.style.display = "block";
       c.style.display = "none";
+      y.style.display = "none";
       window.onscroll = function() {};
       // p.style.opacity = 1;
     } else {
@@ -89,7 +91,7 @@
   }
   function enableScroll() {
     window.onscroll = function() {};
-  }
+  } 
   </script>
 </html>
 
