@@ -16,36 +16,59 @@ body{
     padding: 10px;
     position: fixed;
     top: 0;
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 0px 1px black;
 }
 .logo{
-    padding-top: 20px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     height: 80%;
 }
 #tedlogo{
     width: 300px;
 }
 .link{
-    width: 70%;
+    width: 100%;
     text-align: center;
     margin-top: 3%;
+    margin-left: 10%;
+}
+@media only screen and (max-width: 1250px) {
+    .link{
+        margin-left: 3%;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .link{
+        margin-left: 25%;
+    }
 }
 .toggle-link{
     display: none;
     top: 115px;
-    left: 30%;
+    left: 35%;
     position: absolute;
     background-color: white;
-    width: 20rem;
-    height: 100vh;
+    width: 15rem;
+    /* height: 100vh; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 1%;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+@media only screen and (max-width: 650px) {
+    .toggle-link{
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .toggle-link{
+        left: 20%;
+    }
 }
 .list{
     list-style: none;
-    text-align: left;
+    text-align: center;
     padding: 8%;
     border-bottom:1px #c7c7c7 solid;
 }
@@ -67,7 +90,7 @@ body{
     list-style: none;
     border-bottom:1px #c7c7c7 solid;   
     padding: 4%;
-    padding-left: 15%;
+    padding-left: 40%;
 }
 .listdroplink{
     /* margin-left: auto; */
@@ -78,7 +101,7 @@ body{
 }
 #tab{
     text-decoration: none;
-    padding-left: 5%;
+    margin-left: 5%;
     color: red;
     font-family: 'Inter', sans-serif;
 }
@@ -140,12 +163,9 @@ body{
 }
 .droptab{
     padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 15%;
     width: 50px;
 }
-/* .droptab:hover{
-    background-color: #ddd;
-} */
 #atab{
     text-decoration: none;
     color: red;
@@ -197,7 +217,7 @@ body{
         text-align: right; 
     }
     .toggle-link{
-        width: 20rem;
+        width: 15rem;
     }
     .toggle-menu{
         height: 2.6rem;
@@ -217,9 +237,7 @@ body{
 @media only screen and (max-width: 500px) {
     #tedlogo{
         width: 250px;
-    }
-    .logo{
-        padding-left: 25px;
+        padding-top: 4%;
     }
     .toggle-menu{
         margin-left: 1rem;
@@ -231,5 +249,6 @@ body{
 @media only screen and (max-width: 400px) {
     .toggle-link{
         width: 12rem;
+        left: 23%;
     }
 }
